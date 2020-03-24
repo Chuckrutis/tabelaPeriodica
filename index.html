@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Tabela Periódica</title>
+	<script src="jquery-2.2.1.js"></script>
+	<script src="scriptPaginaConteudo.js"></script>
+	<link rel="stylesheet" href="balloon.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- <link href="estilo.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]
+	-->
+</head>
+
+<body>
+	<!-- PAGINA PRINCIPAL -->
+	<div id="paginaInicial">
+		<div class="foo sm-titulo">
+			<span class="letter" data-letter="Tabela">Tabela</span>
+			<span class="letter" data-letter="Periódica">Periódica</span>
+		</div>
+		<div class="container">
+			<div class="form-group col-sm-2"></div>
+			<div class="form-group col-sm-8 sm-div">
+				<div class="row">
+					<button class="btn btn-primary btn-lg btn3d" id="botao_1" name="A" value="1">A</button><br>
+
+					<button class="btn btn-primary btn-lg btn3d" id="botao_2" name="B" value="2">B</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_3" name="C" value="3">C</button> 
+					<button class="invisivel">C</button>   
+					<button class="btn btn-primary btn-lg btn3d" id="botao_4" name="D" value="4">D</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_5" name="E" value="5">E</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_6" name="F" value="6">F</button><br>
+
+					<button class="btn btn-primary btn-lg btn3d" id="botao_7" name="G" value="7">G</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_8" name="H" value="8">H</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_9" name="I" value="9">I</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_10" name="J" value="10">J</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_11" name="K" value="11">K</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_12" name="L" value="12">L</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_13" name="M" value="13">M</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_14" name="N" value="14">N</button><br>
+
+					<button class="btn btn-primary btn-lg btn3d" id="botao_15" name="O" value="15">O</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_16" name="P" value="16">P</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_17" name="Q" value="17">Q</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_18" name="R" value="18">R</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_19" name="S" value="19">S</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_20" name="T" value="20">T</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_21" name="U" value="21">U</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_22" name="V" value="22">V</button><br>
+
+					<button class="btn btn-primary btn-lg btn3d" id="botao_23" name="W" value="23">W</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_24" name="X" value="24">X</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_25" name="Y" value="25">Y</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_26" name="Z" value="26">Z</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_27" name="1" value="27">1</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_28" name="2" value="28">2</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_29" name="3" value="29">3</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_30" name="4" value="30">4</button><br>
+
+					<button class="btn btn-primary btn-lg btn3d" id="botao_31" name="5" value="31">5</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_32" name="6" value="32">6</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_33" name="7" value="33">7</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_34" name="8" value="34">8</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_35" name="9" value="35">9</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_36" name="10" value="36">10</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_37" name="!" value="37">!</button> 
+					<button class="btn btn-primary btn-lg btn3d" id="botao_38" name="?" value="38">?</button><br><br>
+					<button class="btn btn-danger btn-lg btn3d btn-trash" value="tabelaConteudoInicio" type="button"
+						onclick="apagarBanco()" data-balloon="Apagar todas as palavras cadastradass"
+						data-balloon-pos="up"><span class="glyphicon glyphicon-trash"></span> Apagar Dados</button>
+				</div>
+			</div>
+			<div class="form-group col-sm-2"></div>
+		</div>
+	</div>
+	<!-- FIM DA PAGINA PRINCIPAL -->
+
+	<!-- INICIO DA PAGINA CONTEUDO -->
+	<div id="paginaConteudo" style="display: none">
+		<div class="container">
+			<div class="form-group col-sm-4"></div>
+			<div class="form-group col-sm-4">
+				<br><br><br>
+				<h1 id="tituloConteudo"></h1>
+			</div>
+			<div class="form-group col-sm-"></div>
+		</div>
+		<div class="container">
+			<div class="form-group col-sm-2"></div>
+			<div class="form-group col-sm-8 sm-div">
+				<form>
+					<div class="form-group">
+						<label for="input-palavra">Palavra:</label>
+						<input type="text" class="form-control" id="txtChave"></input>
+					</div>
+					<div class="form-group">
+						<label for="input-descricao">Descrição:</label>
+						<textarea class="form-control" rows="4" id="txtValor"></textarea>
+					</div>
+					<div class="form-group">
+						<a class="btn btn-primary btn-lg btn3d btn-func" onclick="adicionar()"
+							data-balloon="Adicionar uma palavra a tabela" data-balloon-pos="up"><span
+								class="glyphicon glyphicon-pencil"></span> Adicionar </a>
+						<a class="btn btn-primary btn-lg btn3d btn-func" onclick="remover()"
+							data-balloon="Excluir uma palavra cadastrada" data-balloon-pos="up"><span
+								class="glyphicon glyphicon-remove"></span> Excluir </a>
+						<a class="btn btn-primary btn-lg btn3d btn-func" onclick="pesquisar()"
+							data-balloon="Pesquisar uma palavra cadastrada" data-balloon-pos="up"><span
+								class="glyphicon glyphicon-search"></span> Pesquisar </a>
+						<a class="btn btn-primary btn-lg btn3d btn-func" onclick="limpar()"
+							data-balloon="Pesquisar os campos" data-balloon-pos="up"><span
+								class="glyphicon glyphicon-minus"></span> Limpar </a>
+					</div>
+				</form>
+			</div>
+			<div class="form-group col-sm-2"></div>
+			<div class="container">
+				<div class="form-group col-sm-2"></div>
+				<div class="form-group col-sm-4">                                          
+					<button class="btn btn-success btn-lg btn3d btn-func" type="button" value="tabelaConteudoInicio"
+						onclick="resetarPagina();resetarCampos()" data-balloon="Volta para a pagina da tabela"
+						data-balloon-pos="up"><span class="glyphicon glyphicon-home"></span> Inicio</button>
+				</div>
+				<div class="form-group col-sm-4"></div>
+			</div>
+		</div>
+	</div>
+	<!-- FIM DA PAGINA CONTEUDO -->
+
+	<!-- INICIO DA Tabela -->
+	<div id="paginaTabela" style="display: none">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<h2>Lista de Palavras</h2>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th width="100px">Palavra</th>
+								<th id="colunaDescricao">Descrição</th>
+							</tr>
+						<tbody id="corpo_tabela" style="word-break:break-word">
+
+						</tbody>
+						</thead>
+					</table>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- FIM DA LISTA -->
+
+	<!-- RODA PE -->
+	<div class="footer">
+		<div id="button"></div>
+		<div id="container">
+			<div id="cont">
+				<div class="footer_center">
+					<h3>Desenvolvido por: Renan Arantes</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

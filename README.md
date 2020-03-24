@@ -1,5 +1,5 @@
 # .: Tabela Periódica :.
-O projeto Tabela Periódia serve para <strong>cadastrar</strong>, <strong>pesquisar</strong>, <strong>editar</strong>, <strong>listar</strong> e <strong>remover</strong> palavras armazenadas no <strong>localstorage</strong> do navegador.
+O projeto Tabela Periódia serve para <strong>cadastrar</strong>, <strong>pesquisar</strong>, <strong>editar</strong>, <strong>listar</strong> e <strong>remover</strong> palavras armazenadas no <strong>localstorage</strong> do navegador(Google Chrome ou Opera).
 
 ## Tecnologias
 - JavaScript
